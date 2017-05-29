@@ -1,0 +1,112 @@
+/* Quiz Results */
+
+.results {
+	background-color: rgba(255, 239, 204, 0.5);
+	border: 1px solid #00393d;
+	box-shadow: 1px 1px 1px grey;
+	padding: 25px 50px;
+}
+
+.resultsBox {
+	display: flex;
+	margin-bottom: 40px;
+}
+
+.yourKanye {
+	font-family: $heading-font-family;
+	font-size: 40px;
+	text-shadow: 0.5px 0.5px 0.5px $dark-blue;
+}
+
+.imageBox {
+	margin-right: 20px;
+}
+
+.imageBox img {
+	display: block;
+	border: 1px solid #00393d;
+	box-shadow: 1px 1px 1px grey;
+}
+
+.blurbBox {
+	margin-left: 30px;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.blurb {
+	font-size: 20px;
+	margin-bottom: 60px;
+}
+
+.lyric {
+	font-style: italic;
+	text-align: center;
+	font-weight: lighter;
+	font-size: 20px;
+}
+
+.lyric:before {
+	content: '\f10d';
+	font-family: 'FontAwesome';
+	font-size: 15px;
+	margin-right: 10px;
+	color: $aquamarine;
+	text-shadow: 0.5px 0.5px 0.5px $dark-blue;
+}
+
+.lyric:after {
+	content: '\f10e';
+	font-family: 'FontAwesome';
+	font-size: 15px;
+	margin-left: 10px;
+	color: $aquamarine;
+	text-shadow: 0.5px 0.5px 0.5px $dark-blue;
+}
+
+.twitter a {
+	text-decoration: none;
+	color: $dark-blue;
+}
+
+@media (max-width: 930px) {
+	.resultsBox {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.imageBox {
+		margin-right: 0;
+	}
+
+	.blurbBox {
+		margin-left: 0;
+	}
+
+	.blurb {
+		margin-top: 30px;
+	}
+}
+
+@media (max-width: 535px) {
+	.buttons {
+		flex-direction: column;
+		max-width: 100%;
+	}
+
+	.button {
+		margin-left: 0;
+		margin-bottom: 25px
+	}
+
+	.imageBox img {
+		max-width: 100%;
+	}
+
+	.results {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+}

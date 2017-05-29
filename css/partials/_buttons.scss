@@ -1,0 +1,46 @@
+input[type="submit"],
+input[type="reset"] {
+	font-size: 18px;
+}
+
+.buttons, 
+.submit {
+	display: flex;
+	justify-content: center;
+}
+
+.buttons p {
+	font-weight: 400;
+}
+
+.button {
+	border: none;
+	letter-spacing: 2px;
+	background-color: transparent;
+	text-decoration: none;
+	color: $dark-blue;
+	box-shadow: 5px 5px 5px $golden;
+	display: block;
+	padding: 10px 15px;
+	position: relative;
+	border-radius: 2px;
+	text-transform: uppercase;
+	border: 2px solid $aquamarine-dark;
+	margin-left: 17px;
+	outline: none;
+	background: rgba(255, 255, 255, 0.5);
+	font-weight: 100;
+	text-align: center;
+	transition: all 0.3s ease;
+
+	&:hover {
+		background: white;
+		font-weight: 900;
+		box-shadow: 5px 5px 5px $golden;
+	}
+}
+
+.resetButton {
+	margin-left: 0;
+}
+

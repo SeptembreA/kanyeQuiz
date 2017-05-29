@@ -1,0 +1,78 @@
+html {
+	font-size: 100%;
+}
+
+body {
+	font-family: $base-font-family;
+	color: $dark-blue;
+	font-weight: 400;
+	background-image: url(../assets/background.jpg);
+	// change the url path before we submit
+}
+
+.wrapper {
+	width: 80%;
+	margin: 0 auto;
+	padding: 10px;
+}
+
+h1 {
+	font-family: $heading-font-family;
+	font-size: 55px;
+	margin: 0;
+	text-align: center;
+}
+
+h2 {
+	font-size: 30px;
+	margin: 0;
+	text-align: center;
+	color: $aquamarine-dark;
+}
+
+p {
+	font-size: 18px;
+	font-weight: bold;
+	margin: 0;
+}
+
+.hide {
+	display: none;
+}
+
+.modalBackground {
+	background-color: rgba(255, 239, 204, 0.5);
+	border: 1px solid #00393d;
+	box-shadow: 1px 1px 1px grey;
+	padding: 25px 20px 25px 50px;
+}
+
+footer {
+	text-align: center;
+}
+
+@media (max-width: 926px) {
+	h1 {
+		font-size: 40px;
+	}
+}
+
+@media (max-width: 683px) {
+	.wrapper {
+		width: 95%;
+	}
+}
+
+@media (max-width: 383px) {
+	.modalBackground {
+		padding-right: 30px;
+		padding-left: 30px;
+	}
+}
+
+@media (max-width: 320px) {
+	.modalBackground {
+		padding-right: 10px;
+		padding-left: 10px;
+	}
+}

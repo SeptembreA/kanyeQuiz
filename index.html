@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Which Kanye Are You?</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Crimson+Text|Rock+Salt" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="wrapper">
+		<header>
+			<h1>Which Kanye Are You?</h1>
+		</header>
+		<main>
+			<section class="quizQuestions modalBackground">
+				<form action="" class="quizForm">
+					<div class="questionBlock styleClass">
+						<p class="questionBlock__question">How would you define your personal style?</p>
+						<div class="questionOptions">
+							<div class="questionInput">
+								<input type="radio" name="style" id="casual" value="casual" required>
+								<label for="casual">Casual cool</label>
+							</div>
+							<div class="questionInput">
+								<input type="radio" name="style" id="hobo" value="hobo">
+								<label for="hobo">Comfortable hobo</label>
+							</div>
+							<div class="questionInput">
+								<input type="radio" name="style" id="future" value="future">
+								<label for="future">Sleek and futuristic</label>
+							</div>
+							<div class="questionInput">
+								<input type="radio" name="style" id="trendy" value="trendy">
+								<label for="trendy">I set trends, I don't follow them</label>
+							</div>
+						</div>
+					</div>
+
+					<div class="questionBlock personalityClass">
+						<p class="questionBlock__question">Describe your personality type:</p>
+						<div class="questionOptions">
+							<div class="questionInput">
+								<input type="radio" name="personality" id="lowKey" value="lowKey" required>
+								<label for="lowKey">I'm low-key</label>
+							</div>
+							<div class="questionInput">
+								<input type="radio" name="personality" id="outgoing" value="outgoing">
+								<label for="outgoing">I'm outgoing</label>
+							</div>
+							<div class="questionInput">
+								<input type="radio" name="personality" id="both" value="both">
+								<label for="both">I'm a lil' bit of both</label>
+							</div>
+						</div>
+					</div>
+
+					<div class="questionBlock chainClass">
+						<p class="questionBlock__question">Describe your chain style:</p>
+						<div class="questionOptions">
+							<div class="questionInput">
+								<input type="radio" name="chain" id="understated" value="understated" required>
+								<label for="understated">Simple Cuban links chain</label>
+							</div>
+							<div class="questionInput">
+								<input type="radio" name="chain" id="godPiece" value="godPiece">
+								<label for="godPiece">A God piece</label>
+							</div>
+							<div class="questionInput">
+								<input type="radio" name="chain" id="noChain" value="noChain">
+								<label for="noChain">No chain. Just a clean white tee.</label>
+							</div>
+							<div class="questionInput">
+								<input type="radio" name="chain" id="iced" value="iced">
+								<label for="iced">Iced out chain</label>
+							</div>
+						</div>
+					</div>
+
+					<div class="questionBlock artistClass">
+						<p class="questionBlock__question">Who is your favourite artist?</p>
+						<div class="questionOptions">
+							<div class="questionInput">
+								<input type="radio" name="artist" id="paul" value="paul" required>
+								<label for="paul">Paul McCartney</label>
+							</div>
+							<div class="questionInput">
+								<input type="radio" name="artist" id="coldplay" value="coldplay">
+								<label for="coldplay">Chris Martin</label>
+							</div>
+							<div class="questionInput">
+								<input type="radio" name="artist" id="jayZ" value="jayZ">
+								<label for="jayZ">Jay Z</label>
+							</div>
+							<div class="questionInput">
+								<input type="radio" name="artist" id="daftPunk" value="daftPunk">
+								<label for="daftPunk">Daft Punk</label>
+							</div>
+							<div class="questionInput">
+								<input type="radio" name="artist" id="kanyeW" value="kanyeW">
+								<label for="kanyeW">Kanye West</label>
+							</div>
+						</div>
+					</div>
+
+					<div class="questionBlock footwearClass">
+						<p class="questionBlock__question">Describe your footwear style:</p>
+						<div class="questionOptions">
+							<div class="questionInput">
+								<input type="radio" name="footwear" id="adidas" value="adidas" required>
+								<label for="adidas">Casual Adidas</label>
+							</div>
+							<div class="questionInput">
+								<input type="radio" name="footwear" id="nike" value="nike">
+								<label for="nike">Trendy Nike</label>
+							</div>
+							<div class="questionInput">
+								<input type="radio" name="footwear" id="combat" value="combat">
+								<label for="combat">Utilitarian combat boots</label>
+							</div>
+							<div class="questionInput">
+								<input type="radio" name="footwear" id="louisV" value="louisV">
+								<label for="louisV">High-end Louis Vuitton sneakers</label>
+							</div>
+						</div>
+					</div>
+
+					<div class="submit">
+						<input class="button submitButton" type="submit" value="Unlock Your Kanye">
+					</div>
+				</form>
+			</section> <!-- ./quizQuestions -->
+
+			<section class="results hide modalBackground">
+				<h2 class="yourKanye"></h2>
+				<div class="resultsBox">
+					<div class="imageBox">
+						<img class="kanyeImage" src="" alt="An illustration of Kanye West">
+					</div>
+					<div class="blurbBox">
+						<p class="blurb"></p>
+						<p class="lyric"></p>
+					</div>
+				</div>
+				<div class="buttons">
+					<input type="reset" class="button resetButton" value="Reset Quiz">
+					<!-- we're going to update the functionality of this twitter button when we post this to our websites -->
+					<a class="button" href="http://twitter.com/intent/tweet?status=Which Kanye are you? Find out here" target="_blank">Share on Twitter</a>
+				</div>
+			</section> <!-- ./results -->
+		</main>
+	</div> <!--  ./wrapper -->
+	
+	<footer>
+		<p>Created by Septembre Anderson and Evan Broom. Photos via Ali Graham. Lyrics via Kanye West.</p>
+	</footer>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
+	<script src="https://use.fontawesome.com/c19b9a1c9c.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,82 @@
+/* Quiz Questions Section */
+
+.questionBlock {
+	margin-bottom: 30px;
+
+	&__question {
+		font-size: 20px
+	}
+}
+
+.questionOptions {
+	display: flex;
+	align-items: flex-start;
+	margin-left: 20px;
+	flex-wrap: wrap;
+}
+
+.questionInput {
+	margin-left: 30px;
+}
+
+input[type="radio"] {
+	display: none;
+	-webkit-appearance: none;
+	position: relative;
+	top: 7px;
+	height: 25px;
+	width: 25px;
+	transition: all 0.15s ease-out 0s;
+	border: 2px solid $aquamarine-dark;
+	border-radius: 50%;
+	color: #fff;
+	cursor: pointer;
+	display: inline-block;
+	outline: none;
+}
+
+input[type="radio"]:checked::before {
+	// we'll likely change this checkmark to a fontawesome check before we make this site live - but we liked this one for presenting
+	content: '✔';
+	font-size: 30px;
+	color: $bright-coral;
+	position: absolute;
+	left: 3px;
+	top: -13px;
+}
+
+label {
+	font-size: 18px;
+}
+
+.submitButton {
+	margin-left: 0;
+}
+
+@media (max-width: 768px) {
+	.questionOptions {
+		margin-left: 0;
+	}
+
+	.questionInput {
+		margin-left: 20px;
+	}
+}
+
+@media (max-width: 472px) {
+	.questionInput {
+		margin-right: 26px;
+	}
+}
+
+@media (max-width: 383px) {
+	
+	.button {
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+
+	.submitButton {
+		font-size: 16px;
+	}
+}
